@@ -1,10 +1,60 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameCommunity Database</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <H1>GameCommunity Database</H1>
+
+<div class="header">
+    <h1>GameCommunity Database</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="snixgames.html">SnixGames Shop</a></li>
+            <li><a href="ima.html">IMA Certificates</a></li>
+        </ul>
+    </nav>
+</div>
+
+<section>
+    <h2>Bienvenido a GameCommunity Database</h2>
+    <p>Selecciona una opción del menú para comenzar:</p>
+    <ul>
+        <li><a href="snixgames.html">Ir a SnixGames Shop</a></li>
+        <li><a href="ima.html">Ir a IMA Certificates</a></li>
+    </ul>
+</section>
+
+<footer id="footer">
+    <p>© 2024 GameCommunity Database. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        adjustFooterPosition();
+    });
+
+    window.addEventListener('resize', function() {
+        adjustFooterPosition();
+    });
+
+    function adjustFooterPosition() {
+        var footer = document.getElementById('footer');
+        var contentHeight = document.body.scrollHeight;
+        var viewportHeight = window.innerHeight;
+        var footerHeight = footer.offsetHeight;
+
+        if (contentHeight + footerHeight < viewportHeight) {
+            footer.style.position = 'fixed';
+            footer.style.bottom = 0;
+        } else {
+            footer.style.position = 'static';
+        }
+    }
+</script>
+
 </body>
 </html>
