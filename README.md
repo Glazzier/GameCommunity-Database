@@ -31,4 +31,5 @@ If you have any questions, feedback, or inquiries, please contact us at [adrialo
 
 ---
 
-*Note: This repository is continuously updated. Make sure to check back regularly for new information.*
+> [!NOTE]
+> This repository is continuously updated. Make sure to check back regularly for new information.*
