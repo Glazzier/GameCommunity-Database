@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SnixGames Shop - GameCommunity Database</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="header">
-    <h1>GameCommunity Database</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="snixgames.html">SnixGames Shop</a></li>
-            <li><a href="ima.html">IMA Certificates</a></li>
-            <li><a href="Plantilla.html">Plantilla GameCommunity</a></li>
-        </ul>
-    </nav>
-</div>
+    <div class="header">
+        <h1>GameCommunity Database</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="snixgames.html">SnixGames Shop</a></li>
+                <li><a href="ima.html">IMA Certificates</a></li>
+                <li><a href="Plantilla.html">Plantilla GameCommunity</a></li>
+            </ul>
+        </nav>
+    </div>
 
-<section>
-    <h2>SnixGames Shop</h2>
-    <!-- Contenido relacionado con SnixGames Shop -->
-    <p>Contenido relacionado con la tienda SnixGames.</p>
-</section>
+    <section>
+        <h2>SnixGames Shop</h2>
+        <!-- Contenido relacionado con SnixGames Shop -->
+        <p>Contenido relacionado con la tienda SnixGames.</p>
+    </section>
 
-<footer id="footer">
-    <p id="copyright">
-        © 2024 GameCommunity Database. Todos los derechos reservados.
-    </p>
-</footer>
+    <footer id="footer">
+        <p id="copyright">
+            © 2024 GameCommunity Database. Todos los derechos reservados.
+        </p>
+    </footer>
 
-<script>
-    window.addEventListener('DOMContentLoaded', function() {
-        adjustFooterPosition();
-    });
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            adjustFooterPosition();
+        });
 
-    window.addEventListener('resize', function() {
-        adjustFooterPosition();
-    });
+        window.addEventListener('resize', function () {
+            adjustFooterPosition();
+        });
 
-    function adjustFooterPosition() {
-        var footer = document.getElementById('footer');
-        var contentHeight = document.body.scrollHeight;
-        var viewportHeight = window.innerHeight;
-        var footerHeight = footer.offsetHeight;
+        function adjustFooterPosition() {
+            var footer = document.getElementById('footer');
+            var contentHeight = document.body.scrollHeight;
+            var viewportHeight = window.innerHeight;
+            var footerHeight = footer.offsetHeight;
 
-        if (contentHeight + footerHeight < viewportHeight) {
-            footer.style.position = 'fixed';
-            footer.style.bottom = 0;
-        } else {
-            footer.style.position = 'static';
+            if (contentHeight + footerHeight < viewportHeight) {
+                footer.style.position = 'fixed';
+                footer.style.bottom = 0;
+            } else {
+                footer.style.position = 'static';
+            }
         }
-    }
-</script>
+    </script>
 
 </body>
+
 </html>
